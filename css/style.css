@@ -1,0 +1,230 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+}
+
+.basic-txtstyle {
+    font-family: Andale Mono, monospace;
+}
+
+.bgcolor {
+    background-color: #F6F4E9;
+}
+
+.bgcolor2 {
+    background-color: #EFD5D3;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+    font-family: American Typewriter, serif;
+}
+
+.navbar-title{
+    font-family: URW Chancery L, cursive;
+    font-size: 20px;
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+#header {
+    width: 100%;
+    height: 500px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background-image: url("../img/coffee\ shop.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-title {
+    padding-top: 190px;
+    font-size: 50px;
+    font-family: URW Chancery L, cursive;
+    
+}
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+.intro-text {
+    color: #064E07;
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+}
+
+/*=============================================
+=                  Cards                      =
+=============================================*/
+.card-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: transparent;
+    width: 300px;
+    margin: 30px 30px;
+    overflow: hidden;
+    transition: all .3s ease;
+    border: hidden;
+}
+
+.card:hover {
+    
+    box-shadow: 0px 25px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: #efd5d3a8;
+    
+}
+
+
+.card-img {
+    width: 300px;
+    height: 400px;
+    display: block;
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.card-title {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+    color: #064E07 
+}
+
+/*=============================================
+=                  Features                   =
+=============================================*/
+.feature-card-bg{
+    background-color: #064E07;
+    
+}
+
+.feature-text{
+    padding-top: 60px;
+    font-size: 40px;
+    font-family: Jazz LET, fantasy;
+}
+
+.feature-text-color{
+    color: #EFD5D3;
+}
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+
+.reviwe-tilte{
+    font-size: 30px;
+    font-family: Apple Chancery, cursive;
+}
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: grayscale(70%);
+    transition: all .5s ease;
+}
+
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+
+#galleryImage1 {
+    background-image: url('https://picsum.photos/id/114/300/300')
+}
+
+#galleryImage2 {
+    background-image: url('https://picsum.photos/id/127/300/300');
+}
+
+#galleryImage3 {
+    background-image: url('https://picsum.photos/id/201/300/300');
+}
+
+#galleryImage4 {
+    background-image: url('https://picsum.photos/id/225/300/300');
+}
+
+#galleryImage5 {
+    background-image: url('https://picsum.photos/id/250/300/300');
+}
+
+#galleryImage6 {
+    background-image: url('https://picsum.photos/id/326/300/300');
+}
+
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 15 px;
+    margin: 0;
+}
+
+
+/*=============================================
+=                   Media                     =
+=============================================*/
+
+@media (max-width: 576px) {
+    .header {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .card-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
